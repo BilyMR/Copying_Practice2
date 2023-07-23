@@ -1,0 +1,264 @@
+body {
+  font-family: mostserrat, arial;
+  padding-left: 180px;
+  padding-top: 60px;
+  padding-right: 30px;
+  background-color: rgba(224, 224, 224, 0.74);
+}
+
+img {
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 14px;
+  padding-top: 15px;
+}
+
+@media (max-width:750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+}
+
+.image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  line-height: 20px;
+  padding-top: 7px;
+}
+
+.pfp-space {
+  display: flex;
+  justify-content: center;
+}
+
+
+.pfp {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.author {
+  font-size: 11px;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+
+.views {
+  font-size: 11px;
+  color: gray;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 5px 10px;
+  background-color: white;
+  border-bottom: 1px solid gray;
+}
+
+.left {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-icon {
+  height: 40px;
+  padding-right: 20px;
+}
+
+.ok-icon,
+.sleep-icon,
+.subir-icon,
+.usuario-icon {
+  height: 30px;
+}
+
+
+.youtube-logo {
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 40px;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  max-width: 500px;
+}
+
+.searchbar {
+  border-radius: 20px;
+  border: 1px solid rgba(122, 122, 122, 0.274);
+  flex: 1;
+  height: 35px;
+  outline: none;
+  padding-left: 20px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.button .tooltip {
+  position: absolute;
+  bottom: -40px;
+  background-color: gray;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 6px 10px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.button:hover .tooltip {
+  opacity: 1;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 37px;
+  border-radius: 50%;
+  margin-left: 6px;
+  border: 1px solid lightgray;
+  transition: background-color 0.35s;
+}
+
+.button:hover {
+  background-color: gray;
+}
+
+.search-icon {
+  height: 25px;
+}
+
+.right {
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.ok-container,
+.sleep-container,
+.subir-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.ok-container .tooltip,
+.sleep-container .tooltip,
+.subir-container .tooltip {
+  position: absolute;
+  top: 50px;
+  background-color: gray;
+  color: white;
+  padding: 6px 10px;
+  font-size: 11px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.35s;
+  pointer-events: none;
+}
+
+.ok-container:hover .tooltip,
+.sleep-container:hover .tooltip,
+.subir-container:hover .tooltip {
+  opacity: 1;
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  width: 160px;
+}
+
+.subs {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-around;
+}
+
+.subs-section {
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.channels {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.channels:hover {
+  background-color: gray;
+}
+
+.subs img {
+  height: 40px;
+  border-radius: 50%;
+  margin-top: px;
+  padding-right: 6px;
+  padding-left: 5px;
+}
+
+.nocr {
+  position: absolute;
+  bottom: 0;
+  font-size: 10px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.582);
+}
